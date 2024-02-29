@@ -167,6 +167,12 @@ body {
   color: var(--clr-neutral-darker);
 }
 
+@media (max-width: 375px) {
+  .recipe__title {
+    font-size: 3.2rem;
+  }
+}
+
 /* .recipe__description {
   font-size: 1.4rem;
 } */
@@ -232,7 +238,20 @@ body {
   font-weight: var(--fw-regular);
 }
 
-.recipe__nutrition {
+.recipe__nutrition table {
+  border-collapse: collapse;
+}
+
+.recipe__nutrition tbody > tr {
+  border-bottom: 1px solid var(--clr-lightest);
+}
+
+.recipe__nutrition tbody > tr:last-child {
+  border-bottom: none;
+}
+
+.recipe__nutrition td {
+  padding: 1.2rem 0;
 }
 
 .recipe__nutrition .nutrients {
