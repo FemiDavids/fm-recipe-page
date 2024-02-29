@@ -195,8 +195,13 @@ body {
   margin-bottom: 1.2rem;
 }
 
+.recipe__prep-time li::marker {
+  color: var(--clr-secondary);
+}
+
 .sub-title {
   margin-bottom: 0.8rem;
+  color: var(--clr-secondary);
 }
 
 .recipe__ingredients,
@@ -229,6 +234,15 @@ body {
 .recipe__instructions li {
   padding-left: 2rem;
   margin-bottom: 1.2rem;
+}
+
+.recipe__ingredients li::marker,
+.recipe__instructions li::marker {
+  color: var(--clr-primary);
+}
+
+.recipe__instructions li::marker {
+  font-weight: var(--fw-bold);
 }
 
 .recipe__subtitle {
